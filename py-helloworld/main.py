@@ -1,3 +1,9 @@
+from User import User
+from User import Trejus
+
+import matplotlib.pyplot as plt
+import csv
+
 print("hello world\n")
 
 name = "Cesar\n"
@@ -20,20 +26,23 @@ print(vectorExample)
 print(vectorExample[0])
 
 for p in vectorExample:
-    p = "Persona: " + p
+    p = "Persona: " + p + "\n"
     print(p)
 
-class User:
-    def __init__(self, name, age, email):
-        self.name = name
-        self.age = age
-        self.email = email
+# Las funciones no necesitan self como argumento
+def showName():
+    print('Jose')
 
-        def sayHello():
-            print(f'Hola! \nMi nombre es: {name}\nMi edad es: {age}\nMi correo es:{email}')
-        
-        super().__init__()
 
 user1 = User("Pancheiser", "23", "pancheiser@reina.com")
-print(user1.age)
-print.sayHello('')
+user2 = User("Chompy", "20", "chompy@gmail.com")
+print(user2.age)
+
+# Call the object's function sayHello
+user2.sayHello()
+
+showName()
+
+trejus1 = Trejus("Chompylandia")
+
+print(trejus1.something)
